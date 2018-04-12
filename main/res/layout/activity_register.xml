@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mx.com.dloza.descendent.MenuActivity"
+    android:background="@drawable/fondo1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_user"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_padding"
+        android:textSize="@dimen/size_text_view"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:singleLine="true"
+        android:id="@+id/edt_email"
+        android:hint="@string/name"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_marginTop="@dimen/size_text_view"
+        android:layout_marginBottom="@dimen/size_card_elevation"
+        android:layout_marginRight="@dimen/size_card_elevation"
+        android:layout_marginLeft="@dimen/size_card_elevation"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_password"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorPrimary"
+        android:singleLine="true"
+        android:layout_marginBottom="@dimen/size_card_elevation"
+        android:layout_marginRight="@dimen/size_card_elevation"
+        android:layout_marginLeft="@dimen/size_card_elevation"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_register"
+        android:text="@string/register"
+        android:layout_marginBottom="@dimen/size_card_elevation"
+        android:layout_marginRight="@dimen/size_card_elevation"
+        android:layout_marginLeft="@dimen/size_card_elevation"
+        />
+
+</LinearLayout>

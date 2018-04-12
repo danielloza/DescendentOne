@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="mx.com.dloza.descendent.MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    <ImageButton
+        android:layout_width="@dimen/cover_width"
+        android:layout_height="@dimen/cover_width"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_1000"
+        android:id="@+id/menu_church"
+        android:onClick="churchActivity"
+        android:src="@drawable/church" />
+
+    <ImageButton
+        android:id="@+id/menu_gallery"
+        android:layout_width="@dimen/cover_width"
+        android:layout_height="@dimen/cover_width"
+        android:layout_alignLeft="@+id/menu_church"
+        android:layout_alignStart="@+id/menu_church"
+        android:layout_below="@+id/menu_church"
+        android:layout_marginTop="@dimen/size_32"
+        android:onClick="galleryActivity"
+        android:src="@drawable/gallery" />
+    <ImageButton
+        android:id="@+id/menu_restaurant"
+        android:layout_width="@dimen/cover_width"
+        android:layout_height="@dimen/cover_width"
+        android:layout_alignLeft="@+id/menu_gallery"
+        android:layout_alignStart="@+id/menu_gallery"
+        android:layout_below="@+id/menu_gallery"
+        android:layout_marginTop="@dimen/size_32"
+        android:onClick="restaurantActivity"
+        android:src="@drawable/restaurant" />
+    <ImageButton
+        android:id="@+id/menu_video"
+        android:layout_width="@dimen/cover_width"
+        android:layout_height="@dimen/cover_width"
+        android:layout_alignLeft="@+id/menu_restaurant"
+        android:layout_alignStart="@+id/menu_restaurant"
+        android:layout_below="@+id/menu_restaurant"
+        android:layout_marginTop="@dimen/size_32"
+        android:onClick="videoActivity"
+        android:src="@drawable/gallery" />
+        <ImageButton
+            android:id="@+id/menu_dolores_gallery"
+            android:layout_width="@dimen/cover_width"
+            android:layout_height="@dimen/cover_width"
+            android:layout_alignLeft="@+id/menu_video"
+            android:layout_alignStart="@+id/menu_video"
+            android:layout_below="@+id/menu_video"
+            android:layout_marginTop="@dimen/size_32"
+            android:onClick="doloresGalleryActivity"
+            android:src="@drawable/restaurant" />
+        <ImageButton
+            android:id="@+id/imb_video"
+            android:layout_width="@dimen/cover_width"
+            android:layout_height="@dimen/cover_width"
+            android:layout_alignLeft="@+id/menu_dolores_gallery"
+            android:layout_alignStart="@+id/menu_dolores_gallery"
+            android:layout_below="@+id/menu_dolores_gallery"
+            android:layout_marginTop="@dimen/size_32"
+            android:onClick="next_video"
+            android:src="@drawable/museo1" />
+        <ImageButton
+            android:id="@+id/imb_artesany"
+            android:layout_width="@dimen/cover_width"
+            android:layout_height="@dimen/cover_width"
+            android:layout_alignLeft="@+id/imb_video"
+            android:layout_alignStart="@+id/imb_video"
+            android:layout_below="@+id/imb_video"
+            android:layout_marginTop="@dimen/size_32"
+            android:onClick="next_crafts"
+            android:src="@drawable/crafts" />
+        <ImageButton
+            android:id="@+id/imb_snow"
+            android:layout_width="@dimen/cover_width"
+            android:layout_height="@dimen/cover_width"
+            android:layout_alignLeft="@+id/imb_artesany"
+            android:layout_alignStart="@+id/imb_artesany"
+            android:layout_below="@+id/imb_artesany"
+            android:layout_marginTop="@dimen/size_32"
+            android:onClick="next_snow"
+            android:src="@drawable/snow1" />
+        <ImageButton
+            android:id="@+id/imb_tours"
+            android:layout_width="@dimen/cover_width"
+            android:layout_height="@dimen/cover_width"
+            android:layout_alignLeft="@+id/imb_snow"
+            android:layout_alignStart="@+id/imb_snow"
+            android:layout_below="@+id/imb_snow"
+            android:layout_marginTop="@dimen/size_32"
+            android:onClick="next_tour"
+            android:src="@drawable/travel1" />
+        <ImageButton
+            android:id="@+id/imb_game"
+            android:layout_width="@dimen/cover_width"
+            android:layout_height="@dimen/cover_width"
+            android:layout_alignLeft="@+id/imb_tours"
+            android:layout_alignStart="@+id/imb_tours"
+            android:layout_below="@+id/imb_tours"
+            android:layout_marginTop="@dimen/size_32"
+            android:onClick="gameActivity"
+            android:src="@drawable/game" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_logout"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:text="@string/get_out"
+                android:textSize="@dimen/size_18"
+                android:layout_marginTop="@dimen/size_15"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
